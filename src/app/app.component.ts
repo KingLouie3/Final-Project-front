@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import {MovieService} from './movie.service'
 
 @Component({
   selector: 'app-root',
@@ -7,4 +8,11 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'final-project-front';
+
+
+  constructor(private _movie: MovieService) {}
+
+
+
+  
 }

@@ -7,7 +7,7 @@ import { MovieService } from '../movie.service';
   styleUrls: ['./login.component.css']
 })
 export class LoginComponent {
-  movies; 
+  movies = []; 
   constructor(public _movie: MovieService) { }
 
 
