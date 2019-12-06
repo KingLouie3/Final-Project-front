@@ -8,6 +8,8 @@ import { MovieService } from '../movie.service';
 })
 export class LoginComponent {
   movies = []; 
+  title;
+  
   constructor(public _movie: MovieService) { }
 
 
@@ -19,6 +21,8 @@ export class LoginComponent {
           console.log("movies", this.movies)
         })
 
+        
+        
     
   }
 

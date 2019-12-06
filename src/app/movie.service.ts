@@ -8,12 +8,15 @@ import { HttpClient} from '@angular/common/http'
 export class MovieService {
 
   constructor(public _http : HttpClient) { }
+  //Discover Key - 'https://api.themoviedb.org/3/discover/movie?api_key=fa6d14f9e93a82672442211716f689ca&language=en-US&sort_by=popularity.desc&include_adult=false&include_video=false&page=1';
 
 
-  baseUrl: string = 'https://api.themoviedb.org/3/discover/movie?api_key=fa6d14f9e93a82672442211716f689ca&language=en-US&sort_by=popularity.desc&include_adult=false&include_video=false&page=1';
-
+  baseUrl: string =  "https://api.themoviedb.org/3/search/movie?api_key=fa6d14f9e93a82672442211716f689ca&language=en-US&query="
+  input;
+  LastUrl: string = "&page=1&include_adult=false"
   getMovies( ) {
-    return this._http.get(`${this.baseUrl}`);
+    console.log(this.baseUrl+this.input+this.LastUrl)
+    return this._http.get(`${this.baseUrl}+${this.input}+${this.LastUrl}`);
   }
   getPeople( ) {
     return this._http.get(`${this.baseUrl}/people/`);
