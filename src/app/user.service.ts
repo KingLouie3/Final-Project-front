@@ -6,7 +6,7 @@ import { HttpClient } from '@angular/common/http';
 })
 export class UserService {
 firstName = '';
-isLoggedIn = true;
+isLoggedIn ;
   baseUrl: string = "http://localhost:3000/api/";
   appUserUrl: string = "appUsers/"
 

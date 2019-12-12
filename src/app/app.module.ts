@@ -12,6 +12,7 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { FormsModule } from '@angular/forms';
 import { RegisterComponent } from './register/register.component';
 import { from } from 'rxjs';
+import { AppRoutingModule } from './app-routing/app-routing.module';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,7 @@ import { from } from 'rxjs';
     LoginComponent,
     NavbarComponent,
     RegisterComponent,
-    UserService
+    
   ],
   imports: [
     BrowserModule,
@@ -27,7 +28,8 @@ import { from } from 'rxjs';
     BrowserAnimationsModule,
     HttpClientModule,
     FormsModule,
-    RouterModule
+    RouterModule,
+    AppRoutingModule
       
     
   ],

@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { UserService } from '../user.service';
-import {RouterModule} from '@angular/router';
+import {RouterModule, Router} from '@angular/router';
+
 import { from } from 'rxjs';
 @Component({
   selector: 'app-register',
@@ -13,7 +14,7 @@ form = {
   lastName:'',
   email:''
 }
-  constructor(private _userService: UserService, private router: RouterModule ) { }
+  constructor(private _userService: UserService, private router: Router ) { }
 
   ngOnInit() {
   }
@@ -28,6 +29,6 @@ form = {
   }
 
   goToDash(){
-    this.router.navigate(['/home'])
+     this.router.navigate(['/home'])
   }
 }
