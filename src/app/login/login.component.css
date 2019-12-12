@@ -5,7 +5,7 @@
 #img {
 width: 205px;
 position: relative; top: -120px;
-background-color: crimson;
+/* background-color: crimson; */
 }
 
 p {
@@ -13,22 +13,21 @@ display: inline-block;
 position: relative; top: 100px; left: 320px;
 font-size-adjust: 0.58;
 width: 550px;
-background-color: chocolate;
+/* background-color: chocolate; */
 }
 
 #movie-cont {
     border: 1px solid green ;
-    background-color: red;
+    /* background-color: red; */
 }
 
 #title {
     text-align: center;
-    background-color: cyan;
+    /* background-color: cyan; */
 }
 
-.ratings_wrapper {
-    position: relative;
-    margin-left: 5px;
-    width: 185px;
-    z-index: 2;
-}
+#ratings_wrapper {
+    position: relative; top: 100px; left: 400px;
+    background-color: red;
+   
+} 
